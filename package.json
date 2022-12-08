@@ -1,0 +1,29 @@
+{
+  "name": "dashboard",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "env-cmd turbo run build",
+    "dev": "env-cmd turbo run dev --parallel",
+    "dev:authentication": "env-cmd turbo run dev --filter=authentication",
+    "dev:frontliner": "env-cmd turbo run dev --filter=frontliner",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "env-cmd": "^10.1.0"
+  },
+  "packageManager": "pnpm@7.14.1"
+}

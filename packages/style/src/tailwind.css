@@ -1,0 +1,12 @@
+@import './reusable.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* remove dropdown arrow on select */
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    }
+  },
+  "globalEnv": [
+    "NEXT_PUBLIC_AUTHENTICATION_PORT",
+    "NEXT_PUBLIC_COOKIE_DOMAIN",
+    "NEXT_PUBLIC_FRONTLINER_PORT",
+    "NEXT_PUBLIC_BASE_URL_AUTHENTICATION",
+    "NEXT_PUBLIC_BASE_URL_FRONT_LINER",
+    "NEXT_PUBLIC_BASE_URL_USER_SERVICE",
+    "NEXT_PUBLIC_BASE_URL_PARTNER_SERVICE",
+    "NEXT_PUBLIC_BASE_URL_CMS_SERVICE"
+  ]
+}

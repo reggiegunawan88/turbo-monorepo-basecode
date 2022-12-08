@@ -1,0 +1,17 @@
+.input-style {
+  @apply w-full px-3 rounded border-b-default border-dark-4 h-10 outline-none text-dark-1;
+}
+.input-style-bordered {
+  @apply w-full px-3 rounded border-default border-dark-4 h-10 outline-none text-dark-1;
+}
+
+.dropdown-input-style {
+  @apply w-full px-3 rounded border-default border-light-1 h-14 outline-none cursor-pointer;
+}
+
+.btn-primary {
+  @apply bg-main-primary py-2 h-10 text-center rounded text-white outline-none shadow text-sm font-semibold;
+}
+.btn-disabled {
+  @apply bg-light-1 py-2 h-10 text-center rounded text-dark-4 outline-none shadow text-sm font-semibold;
+}
